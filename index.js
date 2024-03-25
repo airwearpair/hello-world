@@ -1,2 +1,3 @@
+const string = 'Hello world'
 // comment
-console.log('Hello world')
+console.log(string)
