@@ -3,3 +3,4 @@ const string = 'Hello world'
 console.log(string)
 // world
 // world
+// world
