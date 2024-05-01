@@ -28,3 +28,4 @@ function toTitleCase(str) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
+let fruit = fruits[Math.floor(Math.random()*fruits.length)];
