@@ -29,3 +29,4 @@ function toTitleCase(str) {
   });
 }
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+let uniqueArr = [...new Set(arr)];
