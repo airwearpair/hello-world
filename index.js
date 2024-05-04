@@ -31,3 +31,14 @@ function toTitleCase(str) {
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
 let uniqueArr = [...new Set(arr)];
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+fetch('https://example.com/authenticate', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ username: 'David', password: '12345' })
+}).then(response => response.json()).then(data => {
+    console.log(data);
+}).catch(error => {
+    console.error('Error:', error);
+});
