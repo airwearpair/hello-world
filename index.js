@@ -45,3 +45,10 @@ fetch('https://example.com/authenticate', {
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+const debounce = (fn, time) => {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), time);
+  };
+};
