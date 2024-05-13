@@ -71,3 +71,10 @@ const element = document.querySelector('#element');
 if (element.offsetParent === null) {
     console.log('Element is hidden');
 }
+const debounce = (fn, time) => {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), time);
+  };
+};
