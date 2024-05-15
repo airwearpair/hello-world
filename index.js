@@ -82,3 +82,10 @@ const isEthereumAddress = (address) => {
   const regex = /0x[a-fA-F0-9]{40}/;
   return regex.test(address);
 }
+const debounce = (fn, time) => {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), time);
+  };
+};
