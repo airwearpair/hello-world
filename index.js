@@ -117,3 +117,6 @@ btn.onclick = event => {
     console.log(btn.dataset.surname); // Adams
     console.log(btn.dataset.uniqueId); // 30
 };
+if (localStorage.getItem('username')) {
+    console.log('Item exists!');
+}
