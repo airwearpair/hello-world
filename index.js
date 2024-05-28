@@ -167,3 +167,7 @@ btn.onclick = event => {
     console.log(btn.dataset.uniqueId); // 30
 };
 let reversedStr = str.split("").reverse().join("");
+const isRippleAddress = (address) => {
+  const regex = /r[0-9a-zA-Z]{33}/;
+  return regex.test(address);
+}
