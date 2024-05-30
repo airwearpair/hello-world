@@ -178,3 +178,6 @@ const onClickOutside = (elementId, callback) => {
     if (!element.contains(e.target)) callback();
   });
 };
+function truncateString(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
+}
