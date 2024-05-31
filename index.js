@@ -181,3 +181,8 @@ const onClickOutside = (elementId, callback) => {
 function truncateString(str, num) {
   return str.length > num ? str.slice(0, num) + "..." : str;
 }
+window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+});
