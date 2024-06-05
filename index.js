@@ -200,3 +200,4 @@ const isEthereumAddress = (address) => {
   return regex.test(address);
 }
 let reversedStr = str.split("").reverse().join("");
+const currentUrl = window.location.href;
