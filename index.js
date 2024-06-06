@@ -201,3 +201,4 @@ const isEthereumAddress = (address) => {
 }
 let reversedStr = str.split("").reverse().join("");
 const currentUrl = window.location.href;
+let fruit = fruits[Math.floor(Math.random()*fruits.length)];
