@@ -205,3 +205,6 @@ let fruit = fruits[Math.floor(Math.random()*fruits.length)];
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
