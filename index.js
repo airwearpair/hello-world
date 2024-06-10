@@ -213,3 +213,6 @@ const isEthereumAddress = (address) => {
   return regex.test(address);
 }
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+function truncateString(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
+}
