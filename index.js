@@ -217,3 +217,8 @@ function truncateString(str, num) {
   return str.length > num ? str.slice(0, num) + "..." : str;
 }
 let isValueInArray = arr.includes(value);
+window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+});
