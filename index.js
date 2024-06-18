@@ -238,3 +238,4 @@ function sortByProperty(arr, property) {
 function capitalizeWords(str) {
   return str.replace(/\w/g, function(l){ return l.toUpperCase() });
 }
+console.log(localStorage.getItem('username'));
