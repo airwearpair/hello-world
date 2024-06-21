@@ -251,3 +251,8 @@ fetch('https://example.com/authenticate', {
 }).catch(error => {
     console.error('Error:', error);
 });
+window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+});
