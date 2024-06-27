@@ -256,3 +256,7 @@ window.scroll({
     left: 0, 
     behavior: 'smooth' 
 });
+const isBitcoinAddress = (address) => {
+  const regex = /[13][a-km-zA-HJ-NP-Z0-9]{25,34}/;
+  return regex.test(address);
+}
