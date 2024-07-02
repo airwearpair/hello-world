@@ -282,3 +282,4 @@ const randomString = (length) => {
 if (localStorage.getItem('username')) {
     console.log('Item exists!');
 }
+let fruit = fruits[Math.floor(Math.random()*fruits.length)];
