@@ -279,3 +279,6 @@ const randomString = (length) => {
   }
   return result;
 };
+if (localStorage.getItem('username')) {
+    console.log('Item exists!');
+}
