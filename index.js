@@ -284,3 +284,6 @@ if (localStorage.getItem('username')) {
 }
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
 console.log(localStorage.getItem('username'));
+function randomBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
