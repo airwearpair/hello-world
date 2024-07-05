@@ -289,3 +289,6 @@ function randomBetween(min, max) {
 }
 const currentUrl = window.location.href;
 const array = [...Array(10).keys()].map(i => i + 1);
+function countOccurences(str, char) {
+  return str.split(char).length - 1;
+}
