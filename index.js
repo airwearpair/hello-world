@@ -293,3 +293,8 @@ function countOccurences(str, char) {
   return str.split(char).length - 1;
 }
 const array = [...Array(10).keys()].map(i => i + 1);
+el.addEventListener('keyup', e => {
+  msg.style = e.getModifierState('CapsLock')
+    ? 'display: block'
+    : 'display: none';
+});
