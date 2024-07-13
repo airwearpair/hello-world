@@ -329,3 +329,4 @@ btn.onclick = event => {
     console.log(btn.dataset.uniqueId); // 30
 };
 let uniqueArr = [...new Set(arr)];
+const array = [...Array(10).keys()].map(i => i + 1);
