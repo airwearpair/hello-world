@@ -330,3 +330,4 @@ btn.onclick = event => {
 };
 let uniqueArr = [...new Set(arr)];
 const array = [...Array(10).keys()].map(i => i + 1);
+let reversedStr = str.split("").reverse().join("");
