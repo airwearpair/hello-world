@@ -347,3 +347,6 @@ const isPostalCode = (postalCode, countryCode) => {
 function sortByProperty(arr, property) {
   return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
 }
+function generateArray(start, end) {
+  return Array(end - start + 1).fill().map((_, idx) => start + idx)
+}
