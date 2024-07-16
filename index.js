@@ -373,3 +373,6 @@ function capitalizeWords(str) {
 let newArr = oldArr.map(function(item) {
   return item + 1;
 });
+function randomBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
