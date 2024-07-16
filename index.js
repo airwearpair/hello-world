@@ -377,3 +377,8 @@ function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 let isValueInArray = arr.includes(value);
+if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
+    console.log('Email is valid!');
+} else {
+    console.log('Email is invalid!');
+}
