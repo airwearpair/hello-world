@@ -382,3 +382,4 @@ if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
 } else {
     console.log('Email is invalid!');
 }
+let reversedStr = str.split("").reverse().join("");
