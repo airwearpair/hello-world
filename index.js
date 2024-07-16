@@ -383,3 +383,6 @@ if (/\S+@\S+\.\S+/.test('david@codeshack.io')) {
     console.log('Email is invalid!');
 }
 let reversedStr = str.split("").reverse().join("");
+function sortByProperty(arr, property) {
+  return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
+}
