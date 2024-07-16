@@ -367,3 +367,6 @@ el.addEventListener('keyup', e => {
     ? 'display: block'
     : 'display: none';
 });
+function capitalizeWords(str) {
+  return str.replace(/\w/g, function(l){ return l.toUpperCase() });
+}
