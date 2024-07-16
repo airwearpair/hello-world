@@ -376,3 +376,4 @@ let newArr = oldArr.map(function(item) {
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+let isValueInArray = arr.includes(value);
