@@ -362,3 +362,8 @@ const element = document.querySelector('#element');
 if (element.offsetParent === null) {
     console.log('Element is hidden');
 }
+el.addEventListener('keyup', e => {
+  msg.style = e.getModifierState('CapsLock')
+    ? 'display: block'
+    : 'display: none';
+});
