@@ -390,3 +390,8 @@ const isBitcoinAddress = (address) => {
   const regex = /[13][a-km-zA-HJ-NP-Z0-9]{25,34}/;
   return regex.test(address);
 }
+function toTitleCase(str) {
+  return str.replace(/\w/g, function(txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
