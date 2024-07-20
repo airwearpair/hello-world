@@ -406,3 +406,6 @@ function countdownTimer(minutes) {
     }
   }, 1000);
 }
+let newArr = oldArr.map(function(item) {
+  return item + 1;
+});
