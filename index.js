@@ -441,3 +441,4 @@ class Fruit {
     }   
 
 }
+const uniqueNums = [...new Set(nums)];
