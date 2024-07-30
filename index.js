@@ -463,3 +463,4 @@ const isCreditCard = (cc) => {
   return regex.test(cc);
 }
 let uniqueArr = [...new Set(arr)];
+let isValueInArray = arr.includes(value);
