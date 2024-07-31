@@ -464,3 +464,6 @@ const isCreditCard = (cc) => {
 }
 let uniqueArr = [...new Set(arr)];
 let isValueInArray = arr.includes(value);
+function sortByProperty(arr, property) {
+  return arr.sort((a, b) => (a[property] > b[property]) ? 1 : -1);
+}
