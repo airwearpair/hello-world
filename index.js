@@ -471,3 +471,4 @@ const httpsRedirect = () => {
   if (location.protocol !== 'https:')
     location.replace('https://' + location.href.split('//')[1]);
 };
+let randomNum = Math.floor(Math.random() * maxNum);
