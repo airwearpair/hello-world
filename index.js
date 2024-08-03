@@ -472,3 +472,8 @@ const httpsRedirect = () => {
     location.replace('https://' + location.href.split('//')[1]);
 };
 let randomNum = Math.floor(Math.random() * maxNum);
+function toTitleCase(str) {
+  return str.replace(/\w/g, function(txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
