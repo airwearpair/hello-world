@@ -521,3 +521,7 @@ if (element.offsetParent === null) {
     console.log('Element is hidden');
 }
 let isValueInArray = arr.includes(value);
+const httpsRedirect = () => {
+  if (location.protocol !== 'https:')
+    location.replace('https://' + location.href.split('//')[1]);
+};
