@@ -525,3 +525,6 @@ const httpsRedirect = () => {
   if (location.protocol !== 'https:')
     location.replace('https://' + location.href.split('//')[1]);
 };
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
