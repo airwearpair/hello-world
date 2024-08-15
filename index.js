@@ -547,3 +547,14 @@ const isRippleAddress = (address) => {
   return regex.test(address);
 }
 console.log(localStorage.getItem('username'));
+class Orange extends Fruit {
+
+    constructor() {
+        super('Orange', 'Orange');
+    }
+
+    throw() {
+        console.log('You threw the ' + this.name + '.');
+    }
+
+}
