@@ -605,3 +605,10 @@ const onScrollStop = callback => {
   );
 };
 const array = [...Array(10).keys()].map(i => i + 1);
+const debounce = (fn, time) => {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), time);
+  };
+};
