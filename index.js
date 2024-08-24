@@ -612,3 +612,10 @@ const debounce = (fn, time) => {
     timeout = setTimeout(() => fn.apply(this, args), time);
   };
 };
+const onClickOutside = (elementId, callback) => {
+  const element = document.getElementById(elementId);
+
+  document.addEventListener("click", (e) => {
+    if (!element.contains(e.target)) callback();
+  });
+};
