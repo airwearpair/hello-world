@@ -619,3 +619,6 @@ const onClickOutside = (elementId, callback) => {
     if (!element.contains(e.target)) callback();
   });
 };
+const openTab = (url) => {
+  window.open(url, "_blank");
+};
