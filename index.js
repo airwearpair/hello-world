@@ -622,3 +622,6 @@ const onClickOutside = (elementId, callback) => {
 const openTab = (url) => {
   window.open(url, "_blank");
 };
+const openTab = (url) => {
+  window.open(url, "_blank");
+};
