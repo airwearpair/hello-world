@@ -649,3 +649,4 @@ const debounce = (fn, time) => {
     timeout = setTimeout(() => fn.apply(this, args), time);
   };
 };
+setTimeout(() => location.href = "https://codeshack.io", 10000);
