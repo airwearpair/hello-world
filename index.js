@@ -642,3 +642,10 @@ function countdownTimer(minutes) {
 let newArr = oldArr.map(function(item) {
   return item + 1;
 });
+const debounce = (fn, time) => {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), time);
+  };
+};
