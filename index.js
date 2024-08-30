@@ -650,3 +650,6 @@ const debounce = (fn, time) => {
   };
 };
 setTimeout(() => location.href = "https://codeshack.io", 10000);
+const openTab = (url) => {
+  window.open(url, "_blank");
+};
