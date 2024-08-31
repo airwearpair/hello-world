@@ -653,3 +653,8 @@ setTimeout(() => location.href = "https://codeshack.io", 10000);
 const openTab = (url) => {
   window.open(url, "_blank");
 };
+el.addEventListener('keyup', e => {
+  msg.style = e.getModifierState('CapsLock')
+    ? 'display: block'
+    : 'display: none';
+});
