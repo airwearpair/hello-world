@@ -658,3 +658,6 @@ el.addEventListener('keyup', e => {
     ? 'display: block'
     : 'display: none';
 });
+let newArr = oldArr.map(function(item) {
+  return item + 1;
+});
