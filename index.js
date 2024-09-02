@@ -661,3 +661,6 @@ el.addEventListener('keyup', e => {
 let newArr = oldArr.map(function(item) {
   return item + 1;
 });
+function isEmptyObject(obj) {
+  return Object.keys(obj).length === 0;
+}
