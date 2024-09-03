@@ -664,3 +664,7 @@ let newArr = oldArr.map(function(item) {
 function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
+const element = document.querySelector('#element');
+if (element.offsetParent === null) {
+    console.log('Element is hidden');
+}
