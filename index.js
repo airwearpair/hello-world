@@ -668,3 +668,8 @@ const element = document.querySelector('#element');
 if (element.offsetParent === null) {
     console.log('Element is hidden');
 }
+window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+});
