@@ -674,3 +674,8 @@ window.scroll({
     behavior: 'smooth' 
 });
 let fruit = fruits[Math.floor(Math.random()*fruits.length)];
+window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+});
