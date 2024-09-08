@@ -679,3 +679,4 @@ window.scroll({
     left: 0, 
     behavior: 'smooth' 
 });
+let randomNum = Math.floor(Math.random() * maxNum);
