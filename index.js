@@ -696,3 +696,6 @@ const isCreditCard = (cc) => {
   return regex.test(cc);
 }
 let randomNum = Math.floor(Math.random() * maxNum);
+function countOccurences(str, char) {
+  return str.split(char).length - 1;
+}
