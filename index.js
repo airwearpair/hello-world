@@ -699,3 +699,4 @@ let randomNum = Math.floor(Math.random() * maxNum);
 function countOccurences(str, char) {
   return str.split(char).length - 1;
 }
+let randomNum = Math.floor(Math.random() * maxNum);
