@@ -744,3 +744,4 @@ const isPostalCode = (postalCode, countryCode) => {
   }
 }
 let uniqueArr = [...new Set(arr)];
+const uniqueNums = [...new Set(nums)];
