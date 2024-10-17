@@ -763,3 +763,4 @@ const isRGBColor = (rgb) => {
 function capitalizeWords(str) {
   return str.replace(/\w/g, function(l){ return l.toUpperCase() });
 }
+let reversedStr = str.split("").reverse().join("");
