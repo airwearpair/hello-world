@@ -768,3 +768,10 @@ console.log(localStorage.getItem('username'));
 function capitalizeWords(str) {
   return str.replace(/\w/g, function(l){ return l.toUpperCase() });
 }
+const debounce = (fn, time) => {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), time);
+  };
+};
