@@ -784,3 +784,6 @@ btn.onclick = event => {
     console.log(btn.dataset.surname); // Adams
     console.log(btn.dataset.uniqueId); // 30
 };
+function countOccurences(str, char) {
+  return str.split(char).length - 1;
+}
