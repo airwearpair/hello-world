@@ -792,3 +792,7 @@ function toTitleCase(str) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
+const isEthereumAddress = (address) => {
+  const regex = /0x[a-fA-F0-9]{40}/;
+  return regex.test(address);
+}
