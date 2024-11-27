@@ -800,3 +800,8 @@ const isRippleAddress = (address) => {
   const regex = /r[0-9a-zA-Z]{33}/;
   return regex.test(address);
 }
+window.scroll({
+    top: 0, 
+    left: 0, 
+    behavior: 'smooth' 
+});
