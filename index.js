@@ -812,3 +812,6 @@ const isRippleAddress = (address) => {
 function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
