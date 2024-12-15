@@ -815,3 +815,6 @@ function isEmptyObject(obj) {
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
+function truncateString(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
+}
